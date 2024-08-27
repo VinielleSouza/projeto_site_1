@@ -1,0 +1,306 @@
+/* seletor{propriedade:valor;} */
+/* cores: #62003b #e13d9f #ff72c6 (cinza) #a6a6a6 #757575  */
+/* fontes: raleway - montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin:0; padding:0;}
+
+body{
+	background-color: rgb(255, 255, 255, 1.0);
+}
+
+header, img{
+	width: 100%;
+	height: 450px; 
+}
+
+nav{
+	background-color: #62003b;
+	text-align: center;
+	padding: 15px;
+}
+
+a{
+	font: 1.2rem Montserrat, sans-serif;
+	text-decoration: none;
+}
+
+.a-menu{
+	margin-right: 60px;
+	font-style: italic;
+	letter-spacing: 3px;
+}
+
+.a-menu:link{
+	color: #FFF;
+}
+
+.a-menu:hover, a:active, a:visited{
+	color: #BDBDBD;
+}
+
+article {
+	width: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+h1{
+	/*	font: 2.2rem 'Raleway', sans-serif 600; ----- pq não deu certo? falta 'regular'/'italic'? */
+	font-family: Raleway, sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+p{
+	font: 1.15rem Montserrat, sans-serif;
+	color: #212121;
+	text-align: justify;
+	line-height: 30px;
+}
+
+/* tag <span id="txt-preto> </span> serve pra separar trechos de texto no html pra poder formatar apenas ele no css"
+ok, mas pode deixar negrito e itálico no html? me parece fazer mais sentido por usar menos código */
+
+section{
+		padding: 30px;
+		box-sizing: border-box;
+}
+
+h2{
+	font-family: Raleway, sans-serif;
+	font-size: 1.8rem;
+	color: #e13d9f;
+}
+
+#planos{
+	background-color: #000;
+	color: #fff;
+}
+
+#planos p{
+	color: #fff;
+	margin-top: 20px;
+}
+
+ul{
+/*	list-style-position: inside;*/
+	list-style-type: circle;
+	padding: 17px 35px;
+	font: 1.15rem Montserrat, sans-serif;
+	font-style: italic;
+}
+
+li{
+	font: 1.15rem Montserrat, sans-serif;
+	font-weight: bold;
+	color: #e13d9f;
+	margin-top: 13px;
+}
+
+#depos{
+	background-color: #EFEFEF;
+}
+
+#container{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.card{
+	background-color: #fff;
+	margin: 10px;
+	width: 33%;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 2px 6px 8px #9E9E9E;
+/* para ir para esquerda ou em cima, é só usar o negativo -2px	*/
+	transition: 0.5s;
+}
+
+.card:hover{
+	box-shadow: 2px 4px 8px #e13d9f;
+}
+
+.img-depos{
+	width: 85%;
+	height: 50%;
+	padding: 20px 5px 10px 30px;
+/* tem como alinhar a imagem ao centro? fazendo uma div pra conter a imagem assim como tem a div content pro texto não
+resolveu; se resolvo o padding, perco o border-radius e vice-versa; aqui teria que trabalhar com a margin ao invés do padding? */
+}
+/* em tese não seria necessária essa classe para as imagens dos cards, mas como ficou ruim a formatação das imagens, 
+vai ficar por enquanto */
+
+h3{
+	font: 1.3rem Raleway, sans-serif;
+	font-weight: 530;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	font-style: italic;
+	color: #62003b;
+}
+
+.card-content p{
+	font-size: 1.1rem;
+	color: #grey;
+	text-align: justify;
+	line-height: 24px;
+	font-style: italic;
+}
+
+.p-nome{
+	margin-top: 15px;
+	font-style: normal;
+	text-align: center;
+	font-weight: 500;
+	color: #62003b;
+/* não entendi pq o weight, margin e color foram ok, mas o font-style e o text-align simplesmente não funcionaram	*/
+}
+
+#p-online{
+}
+
+#p-online p{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#container-pton{
+	display: flex;
+}
+
+.content-pton{
+	padding: 20px;
+}
+
+.container-sm{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	margin-top: 10px;
+	
+}
+/*pq nos vídeos de aula foi criado classe se só tem um item? não deveria ser id?*/
+
+.a-icon:link{
+	color: #e13d9f;
+}
+
+.a-icon:hover, a:active, a:visited{
+	color: #BDBDBD;
+}
+
+.img-icon{
+	width: 28px;
+	height: 28px;
+	margin-left: 10px;
+}
+
+video{
+	width: 700px;
+}
+
+footer{
+	background-color: #000;
+	padding: 10px;
+}
+
+footer p{
+	color: #fff;
+	text-align: center;
+}
+
+footer a:link{
+	color: #fff;
+	font-style: italic;
+}
+
+footer a:hover, a:active, a:visited{
+	color: #e13d9f;
+	font-style: normal;
+}
+
+/* páginas agendamentos */
+
+#agends {
+
+}
+
+#h1-agends{
+	text-align: center;
+}
+
+#agends p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form{
+	width: 50%;
+	margin: 0 auto;
+}
+
+input, select, textarea {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 15px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #62003b;
+	font: 1.0rem Montserrat, sans-serif;
+	color: #212121;
+	font-weight: 450;
+
+}
+
+label, fieldset{
+	font: 1.1rem Montserrat, sans-serif;
+	font-weight: 500;
+}
+
+fieldset{ 
+	border: 1px solid #62003b;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#grup{ 
+	display: flex;
+ }
+
+#hora{
+	padding-left: 40px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 30px;
+}
+
+textarea{ 
+	height: 80px;
+ }
+
+ #btts{
+ 	display: flex;
+ }
+
+input[type="submit"], input[type="reset"]{
+	margin: 10px 20px 20px 20px;
+	background-color: #66bb6a;
+	color: #FFF;
+	border: 0;
+	border-radius: 5px;
+}
+
+input[type="reset"]{
+	background-color: #b71c1c;
+}
+
